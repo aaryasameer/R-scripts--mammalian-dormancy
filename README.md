@@ -1,4 +1,4 @@
-# Torpor-strategy-and-activity-pattern
+# R script- mammalian dormancy
 Figuring out if there is a connection between an animal's activity pattern (nocturnal/diurnal/crepuscular,etc.) and their ability to demonstrate dormancy
 ##files in this dataset
 packages used- readxl, ggplot2, dplyr

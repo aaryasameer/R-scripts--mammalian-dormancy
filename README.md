@@ -36,3 +36,24 @@ Cathemeral/Crepuscular- fewer data points, cluster around lower BM
 ![Heatmap of Log Body Mass by Latitude and Torpor Type](plots/heatmap_latitude_bodymass.png)
 
 
+**##diet and dormancy**
+Studying the association between diet and dormancy. Are certain diets more favourable for torpor/hibernation? Is there a fattening stage in mammals that preps them to endure dormant periods, thereby leaning them towards certain dietary categories? Are these traits conserved across orders?
+###files in this dataset- readxl, ggplot2, dplyr, patchwork
+full_data- dataset by Kissling. Contains diet information on all mammals (6625 species)
+dormant_data- dataset which contains information on dormant mammals. Diet info. was not present...imported from Kissling dataset using left_join()
+performed k means clustering to find out if there's significant grouping in TYPE, TrophicLevel and order according to BIO variables set by WorldClim database where BIO1= annual temp, BIO2= mean diurnal range, BIO4= seasonality. Faceted this information into top 5 Orders present in dormant mammal database (the codes for those are just simple scatter plots where shape i.e, circle= DT and triangle = HIB and colours correspond to diet, then proceeded with the clustering)
+result-
+plots: (stacked bar graphs)
+1] comparison of Trophic Levels, all mammals vs dormant mammals
+2] carnivory, omnivory and herbivory diet subtypes, all mammals vs dormant mammals
+chi sq. test to test the statistical significance of distribution of Trophic levels in dormant vs non-dormant mammals
+3] heatmap of residuals obtained from chi sq. test
+Results:
+Carnivory prevalent in dormant mammals when compared to all. Herbivory seen to be reduced. Statistical tests showed a significant p value...these residuals are worth noting. 
+Insectivory despite being over represented, has a positive correlation to animal dormancy; possibly due to insects being a specialized diet form, leading to low food options during winters, morphological limitations, ecological niche constraints, high BMR, small size= rapid heat loss, etc.
+% of dormant granivores found to be greater than insectivores. Points to grains being an energy-rich source, especially for herbivores as granivores are under represented in all mammals dataset but their high numbers in dormant mammals are worth noting.
+Clustering didn't work...i want to perform a 2 way ANOVA
+![combination of all diet graphs](plots/myplot.png)
+
+
+

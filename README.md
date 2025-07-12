@@ -15,6 +15,7 @@ diurnals are 5.52x more likely to show dormancy as compared to baseline
 nocturnals are 15.83x more likely to show dormancy as compared to baseline
 ![diet composition compared with Activity Patterns](plots/diet_composition.png)
 ![diet composition of dormant vs normothermic mammals](plots/diet_composition_2.png)
+![bootstrap](plots/bootstrap.png)
 
 
 

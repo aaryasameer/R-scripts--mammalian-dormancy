@@ -55,5 +55,10 @@ Insectivory despite being over represented, has a positive correlation to animal
 Clustering didn't work...i want to perform a 2 way ANOVA
 ![combination of all diet graphs](plots/myplot.png)
 
+**###glm#####**
+Using glm models to predict how ecological variables such as latitude, climate (bio variables by WorldClim) and NPP affect the diet of dormant mammals.
+I want to account for phylogenetic regression in this as well
+##i am currently working on this, i will write the conclusions, methodology and add the plots after i am done
+
 
 
